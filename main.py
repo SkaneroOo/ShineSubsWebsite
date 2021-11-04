@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import requests
 import random
-
+import os
 from fastapi import FastAPI, Request
 from fastapi.responses import PlainTextResponse, Response, RedirectResponse
 from fastapi.staticfiles import StaticFiles
@@ -12,13 +12,13 @@ from Data import *
 from typing import Dict, Any
 
 
-API_ENDPOINT = 'https://discord.com/api'
-CLIENT_ID = '860982072244043839'
-CLIENT_SECRET = 'fX1PIMQr7WHlbmlLmu3Z_TNU6D2jascK'
-REDIRECT_URI = 'https://a043534675c5.ngrok.io/auth'
+#API_ENDPOINT = 'https://discord.com/api'
+#CLIENT_ID = '860982072244043839'
+#CLIENT_SECRET = os.environ['DISCORD_SECRET']
+#REDIRECT_URI = 'https://shinesubswebsite.herokuapp.com/auth'
 
 
-Mongo = MongoClient("mongodb+srv://WaifuBot:WBot22102002.@esabatad.rt9yj.mongodb.net/esabataD?retryWrites=true&w=majority")
+Mongo = MongoClient(os.environ['MONGO_TOKEN'])
 
 Anime = Mongo.ShineSubs.Anime
 Podcasts = Mongo.ShineSubs.Podcasts
