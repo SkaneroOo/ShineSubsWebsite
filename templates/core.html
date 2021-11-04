@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Shine Subs</title>
+    <link rel="stylesheet" href="/static/core.css">
+    <script src="/static/core.js"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />
+    <script data-ad-client="ca-pub-8136688593502450" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div class="main_container">
+        <div class="navbar">
+            <div class="hamburger" onclick="hamburger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="icon" style="padding-left: calc(var(--navbar-height) * .1);">
+                <a href="/">
+                    <img src="/static/icon.webp" class="icon">
+                </a>
+            </div> 
+            <div id="navbar_items">
+                <a href="/anime"><div class="navbar_item a"><h2 style="color: #d182ff;">Anime</h2></div></a>
+                <a href="/podcasty"><div class="navbar_item p"><h2 style="color: #f00;">Podcasty</h2></div></a>
+                <a href="https://discord.gg/kew5VcaqYW" target="_blank"><div class="navbar_item d"><h2 style="color: #7289d9;">Discord</h2></div></a>
+                <a href="/nudesy"><div class="navbar_item n"><h2 style="color: #f0f;">( ͡° ͜ʖ ͡°)</h2></div></a>
+            </div>
+            <div class="icon" style="padding-right: calc(var(--navbar-height) * .1);">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=860982072244043839&redirect_uri=https%3A%2F%2Fa043534675c5.ngrok.io%2Fauth&response_type=code&scope=identify">
+                    <img src="/static/icon.webp" class="icon">
+                </a>
+            </div>
+        </div>
+        <div class="content">{% block content %}{% endblock %}</div>
+    </div>
+</body>
+</html>

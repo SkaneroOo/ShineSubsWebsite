@@ -1,0 +1,52 @@
+{% extends "core.html" %}
+{% block head %}
+<link rel="stylesheet" href="/static/main.css">
+<script src="/static/main.js"></script>
+{% endblock %}
+{% block content %}
+<div class="videos">
+    <div class="videos_top"><h2>Najnowsze odcinki</h2></div>
+    <div class="episode_container">
+    {% for item in episodes %}
+        <div class="episode">
+            <div class="img">
+                <a href="/series/{{ item.series_id }}/episode/{{ item.episode }}">
+                    <img src="{{ series[item.series_id]['image'] }}">
+                <div class="type">
+                    {% if item.anime == 0 %}
+                        <p>Podcast</p>
+                    {% else %}
+                        <p>Anime</p>
+                    {% endif %}
+                </div>
+                </a>
+            </div>
+            <div class="series_title">
+                <a href="/series/{{ item.series_id }}/episode/{{ item.episode }}">{{ series[item.series_id]['title'] }}</a>
+            </div>
+            <div class="episode_number">
+                <a href="/series/{{ item.series_id }}/episode/{{ item.episode }}">Odcinek {{ item.episode }}</a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+<div class="info">
+    <div class="info_top"><h2>Informacje</h2></div>
+    
+    {% for item in info %}
+    <div class="info_container">
+        <div class="info_title"><h3>{{ item.title }}</h3></div>
+        <div class="info_content">
+            {% for line in item.content %}
+                {% if line == " " %}
+                    <br>
+                {% else %}
+                    <p>{{ line|safe }}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

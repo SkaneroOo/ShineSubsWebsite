@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Description do zmiany własnej -->
+    <meta name="description" content="Strona do oglądania odcinków anime po polsku. Tłumaczenia tworzy grupa subberska Shine Subs.">
+    <meta name="keywords" content="Anime odcinki, anime, anime pl, light novel, manga, Shine, Shine subs,">
+    <!-- Przy modyfikacji strony proszę o dodanie kolejnych autorów po przecinku-->
+    <meta name="author" content="Dawid Chawrona dawidchawrona@gmail.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles and icon-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon" />
+    <title>Shine Subs</title>
+</head>
+<body>
+    <div class="shadow"></div>
+    <!--NAV-->
+    <nav>
+        <ul class="navul">
+            <li class="navli">
+                <a href="./index.html"><img height="68px" src="./src/long logo 1.png" alt="Logo Shine-Subs"></a>
+                <form>
+                    <input type="text" placeholder=" Wyszukiwanie chwilowo niedostepne">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            <li class="navli">
+                <a class="a11" href="./animelist.html"> <div class="nava">Anime</div></a>
+                <a class="a22" href="./podcastlist.html"> <div class="nava">Podcasty</div></a>
+                <a class="a33" href="https://discord.gg/kew5VcaqYW"> <div class="nava">Discord</div></a>
+                <a class="a44" href="./face.html"> <div class="nava">( ͡° ͜ʖ ͡°)</div></a>
+                <button class="login" disabled>Zaloguj się <i class="fab fa-discord"></i></button>
+            </li>
+            <li class="navli burger"><i class="fas fa-bars"></i></li>
+        </ul>
+    </nav>
+    <!-- nav burger menu -->
+    <div class="menu displaying">
+        <div class="menuli"><a href="">Anime</a></div>
+        <div class="menuli"><a href="">Podcasty</a></div>
+        <div class="menuli"><a href="">Discord</a></div>
+        <div class="menuli"><a href="">( ͡° ͜ʖ ͡°)</a></div>
+        <div class="menuli"><a href="">Zaloguj się <i class="fab fa-discord"></i></a></div>
+    </div>
+    <!--MAIN CONTENT-->
+    <div class="container">
+        <!-- SLIDER SECTION -->
+        <section>
+            <div class="navigation">
+                <div class="dunno">
+                    <div class="slidenav" id="s1">
+                        <div class="realslidenav"></div>
+                    </div>
+                </div>
+                <div class="dunno">
+                    <div class="slidenav" id="s2">
+                        <div class="realslidenav"></div>
+                    </div>
+                </div>
+                <div class="dunno">
+                    <div class="slidenav" id="s3">
+                        <div class="realslidenav"></div>
+                    </div>
+                </div>
+                <div class="dunno">
+                    <div class="slidenav" id="s4">
+                        <div class="realslidenav"></div>
+                    </div>
+                </div>
+                <div class="dunno">
+                    <div class="slidenav" id="s5">
+                        <div class="realslidenav"></div>
+                    </div><a href=""></a>
+                </div>
+            </div>
+            <div class="slider-container">
+                <!-- Tylko 5 slajdów jest -->
+                <!-- Edytować tylko ścieżki -->
+                <div class="slide">
+                    <img src="./src/anime1.png" alt="a1">
+                </div>
+                <div class="slide">
+                    <img src="./src/anime2.png" alt="a2">
+                </div>
+                <div class="slide">
+                    <img src="./src/anime3.png" alt="a3">
+                </div>
+                <div class="slide">
+                    <img src="./src/anime4.png" alt="a4">
+                </div>
+                <div class="slide">
+                    <img src="./src/anime5.png" alt="a5">
+                </div>
+            </div>
+        </section>
+        <!-- EPISODES SECTION -->
+        <section>
+            <div class="h2">
+                <h2>Najnowsze Odcinki</h2>
+            </div>
+            <!-- episode template -->
+            <!-- <a href="">
+                <div class="episode">
+                    <img src="./src/zdjęcie.jpg" alt="">
+                     <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                        <h4>Nazwa Anime</h4>
+                        <h5>Odcinek X</h5>
+                    </div>
+                </div>
+            </a> -->
+            <div class="episodes">
+                <a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep1.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>Uramichi Oniisan</h4>
+                            <h5>Odcinek 1</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep2.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>Tsuki ga Michibiku Isekai Douchuu</h4>
+                            <h5>Odcinek 3</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep3.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>Kanojo mo Kanojo</h4>
+                            <h5>Odcinek 4</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep3.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>Kanojo mo Kanojo</h4>
+                            <h5>Odcinek 2</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep2.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 15</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep4.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 3</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep1.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 2</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep4.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 23</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep2.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 2</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep3.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 8</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep4.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 3</h5>
+                        </div>
+                    </div>
+                </a><a href="./anime-template.html">
+                    <div class="episode">
+                        <img src="./src/ep1.jpg" alt="">
+                         <div class="description"><img class="logo-ep" src="./src/logo_png.png" alt="logo">
+                            <h4>title</h4>
+                            <h5>Odcinek 1</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- INFORMATION SECTION -->
+        <section>
+            <div class="info1">
+                <div class="infoh2">
+                    <h2>Informacje</h2>
+                </div>
+                <p>
+                    Dzisiaj jest: 24.08.2021r. 01:35 (wtorek) <!-- Tu wstawić kod JS na aktualną datę i godzinę (jak Ci się chce)--> <br>
+                    Poniedziałek: Uramichi Oniisan<br>
+                    wtorek: Kanojo mo Kanojo <br>
+                    Środa: Natsunagu!, Ovelord<br>
+                    Czwartek: Re-main<br>
+                    Piątek: Tsuki ga Michibiku Isekai Douchuu<br>
+                    Sobota: Nic :c<br>
+                    Niedziela: Boruto, Fumetsu no Atae<br>
+                </p>
+            </div>
+            <div class="rekru">
+                <div class="subtitle">
+                    <h3>Rekrutacja!</h3>
+                </div>
+                <p>Chciałbyś spróbować swoich sił w tłumaczeniu anime albo podcastów?<br>
+                    Świetnie się składa. Akurat prowadzimy rekrutację.<br><br>
+                    Ludzie, których nam potrzeba:<br>
+                    • Tłumacze<br>
+                    • Korektorzy<br>
+                    • Typesetterzy<br>
+                    • Graficy<br>
+                    • Timerzy<br>
+                    • Montażyści<br><br>
+                    Nie musisz niczego umieć, wszystkiego możemy nauczyć cię na miejscu.<br><br>
+                    Jeżeli zdecydujesz się spróbować i dołączyć do nas, to wbijaj na discorda<br>
+                    Zapraszamy cieplutko i życzymy miłego dnia!<br>
+                </p>
+            </div>
+            <div class="info">
+                <div class="subtitle">
+                    <h3>Tłumaczenia 2021<h3>
+                </div>
+                <p>Sezon wiosenny już za nami, pora więc w końcu zapowiedzieć tłumaczenia lato 2021!<br>
+                    W tym sezonie będziemy tłumaczyć takie serie jak:<br><br>
+                    Uramichi Oniisan <br>tłumaczone przez "Nazwa tłumacza numer 1"<br><br>
+                    Tsuki ga Michibiku Isekai Douchuu <br>tłumaczone przez "Nazwa tłumacza numer 2"<br><br>
+                    Hamefura X <br>tłumaczone przez "Nazwa tłumacza numer 3"<br><br>
+                    Kanojo mo Kanojo <br> tłumaczone przez "Nazwa tłumacza numer 4"<br><br>
+                    Re-Main <br> tłumaczone przez "Nazwa tłumacza numer 5"<br><br>
+                    Natsunagu! <br> tłumaczone przez "Nazwa tłumacza numer 6"<br><br>
+                    
+                    Zapraszamy do oglądania na naszej stronie!
+                </p>
+            </div>
+        </section>
+        <!-- HOOK UP SECTION -->
+        <section>
+            <button onclick="goUp();" class="up-btn"><i class="fas fa-arrow-up"></i></button>
+        </section>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <p>Strona z anime grupy subberskiej Shine Subs®. <br>
+            W razie jakichkolwiek problemów prosimy o kontakt na maila: ShineSubs@gmail.com
+        </p>
+    </footer>
+    <!--SCRIPTS-->
+    <script src="https://kit.fontawesome.com/c8845beca3.js" crossorigin="anonymous"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/upbtn.js"></script>
+    <script src="js/slides.js"></script>
+</body>
+</html>

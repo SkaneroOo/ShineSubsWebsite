@@ -1,0 +1,105 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .wrap {
+  position: relative;
+  color: white;
+  padding: 10px;
+  width: 90%;
+  max-width: 550px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.568);
+  border: 2px solid black;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .wrap h2 {
+  font-size: 3rem;
+}
+
+.container .wrap form {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .wrap form input, .container .wrap form label {
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+.container .wrap form [type="submit"] {
+  margin-top: 15px;
+  width: 100px;
+  height: 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #bbbbbb;
+}
+
+.container .wrap form [type="login"], .container .wrap form [type="password"] {
+  padding-left: 5px;
+  height: 18px;
+  width: 220px;
+  background-color: #cccccc;
+}
+
+.container .wrap form [type="login"]:hover, .container .wrap form [type="password"]:hover {
+  background-color: white;
+}
+
+.container .wrap form [type="submit"]:hover {
+  background-color: white;
+}
+
+.container .wrap .back {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  width: 120px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.container .wrap .back:hover {
+  background-color: rgba(41, 41, 41, 0.616);
+}
+/*# sourceMappingURL=login.css.map */

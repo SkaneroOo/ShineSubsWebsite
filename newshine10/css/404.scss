@@ -1,0 +1,46 @@
+.container {
+    transform: translateY(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 0 10px;
+    text-shadow: 3px 3px 35px black;
+    h1 {
+        font-size: 120px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    button {
+        margin-top: 10px;
+        width: 180px;
+        height: 40px;
+        background-color: #c92f32;;
+        border: 2px inset black;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color .3s ;
+    }
+    button:hover{
+        background-color: #0059b8;
+    }
+}
+@media (max-width: 1340px){
+    .container {
+        h1 {
+            font-size: 8vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+        button {
+            margin-top: 10px;
+            width: 150px;
+            height: 30px;
+            font-size: 1rem;
+        }
+    }
+}

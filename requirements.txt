@@ -1,0 +1,9 @@
+fastapi
+pymongo
+dnspython
+uvicorn
+aiofiles
+jinja2
+requests
+python-multipart
+discord.py

@@ -1,0 +1,40 @@
+{% extends "core.html" %}
+{% block head %}
+<link rel="stylesheet" href="/static/series.css">
+<script src="/static/series.js"></script>
+<meta property="og:site_name" content="SHINE 死ね SUBS">
+<meta property="og:url" content="https://www.shinesubs.tk/series/{{ seria.series_id }}">
+<meta property="og:title" content="{{ seria.title }}">
+<meta property="og:description" content="{{ seria.title }}">
+<meta property="og:type" content="website">
+<meta name="og:image" itemprop="image" content="{{ seria.image }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="top">
+        <div class="img">
+            <img src={{ seria.image }} class="ing">
+        </div>
+        <div class="info">
+            <div class="title">
+                <h2>{{ seria.title }}</h2>
+            </div>
+            <div class="description">
+                {% for item in seria.description %}
+                    <p>{{ item }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="episodes">
+            {% for item in odcinki %}
+                <a href="/series/{{ item.series_id }}/episode/{{ item.episode }}" class="link">
+                    <div class="episode">Odcinek {{ item.episode }}</div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

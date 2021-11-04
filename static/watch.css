@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.np {
+    padding-top: 50px;
+    height: 100px;
+    width: 100%;
+    display: block;
+}
+
+.next {
+    position: absolute;
+    left: 10px;
+    border: 3px solid #111;
+    border-radius: 1000px;
+    height: 80px;
+    width: 240px;
+    padding: 10px;
+    text-align: center;
+    text-justify: center;
+}
+
+.prev {
+    position: absolute;
+    right: 10px;
+    border: 3px solid #111;
+    border-radius: 1000px;
+    height: 80px;
+    width: 240px;
+    padding: 10px;
+    text-align: center;
+    text-justify: center;
+}
+
+.next h2, .prev h2 {
+    transform: translate(0, 45%);
+}

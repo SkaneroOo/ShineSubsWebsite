@@ -1,0 +1,14 @@
+{% extends "core.html" %}
+{% block head %}
+<link rel="stylesheet" href="/static/upload.css">
+{% endblock %}
+{% block content %}
+<h1 id="uploader"></h1>
+<center>
+    <label for="upload-video">Przeglądaj...</label>
+    <input type="file" id="upload-video" name="upload-video">
+</center>
+<button type="button" id="button">klik</button>
+
+<script src="/static/upload.js"></script>
+{% endblock %}

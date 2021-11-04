@@ -1,0 +1,57 @@
+{% extends "core.html" %}
+{% block head %}
+<link rel="stylesheet" href="/static/watch.css">
+<meta property="og:site_name" content="SHINE 死ね SUBS">
+<meta property="og:url" content="https://www.shinesubs.tk/series/{{ odcinek.series_id }}/episode/{{ odcinek.episode }}">
+<meta property="og:title" content="{{ seria.title }}">
+<meta property="og:description" content="{{ seria.title }} odcinek {{ odcinek.episode }}">
+<meta property="og:type" content="video.other">
+<meta property="og:image" content="https://vz-39f6149f-25c.b-cdn.net/{{ odcinek.embed }}/thumbnail.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:video:url" content="https://video.bunnycdn.com/play/4443/{{ odcinek.embed }}">
+<meta property="og:video:secure_url" content="https://video.bunnycdn.com/play/4443/{{ odcinek.embed }}">
+<meta property="og:video:width" content="1920">
+<meta property="og:video:height" content="1080">
+{% endblock %}
+{% block content %}
+<center>
+    <div class="title" style="color: #fff">
+        <h1>{{ odcinek.title }}</h1>
+    </div>
+</center>
+{% if odcinek.anime == 2 %}
+    <div style="width:700px; margin-left: auto; margin-right: auto;">
+        <video width="700" height="393.75" controls>
+            <source src="https://shinesubs.b-cdn.net/{{ odcinek.series_id }}/{{ odcinek.episode }}.mp4" type="video/mp4" />
+            <source src="https://shinesubs.b-cdn.net/{{ odcinek.series_id }}/{{ odcinek.episode }}.mp4.m4v" type="video/mp4" />
+        </video>
+    </div>
+{% elif odcinek.anime == 1 %}
+    <div style="width:700px; margin-left: auto; margin-right: auto;">
+        <div style="position: relative; padding-top: 56.25%;">
+            <iframe src="https://iframe.mediadelivery.net/embed/4443/{{ odcinek.embed }}?autoplay=false" loading="lazy" style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+{% else %}
+    <div style="width:700px; margin-left: auto; margin-right: auto;">
+        <iframe width="700" height="393.75" src="https://www.youtube.com/embed/{{ odcinek.embed }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+{% endif %}
+<div class="np">
+    {% if pn.0 %}
+        <a href="/series/{{ odcinek.series_id }}/episode/{{ odcinek.episode-1 }}">
+            <div class="next">
+                <h2>« Poprzedni odcinek</h2>
+            </div>
+        </a>
+    {% endif %}
+    {% if pn.1 %}
+    <a href="/series/{{ odcinek.series_id }}/episode/{{ odcinek.episode+1 }}">
+        <div class="prev">
+            <h2>Następny odcinek »</h2>
+        </div>
+    </a>
+    {% endif %}
+</div>
+{% endblock %}

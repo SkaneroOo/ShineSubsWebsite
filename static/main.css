@@ -1,0 +1,150 @@
+.videos {
+    position: relative;
+    margin: 1%;
+    width: 65%;
+    height: 100%;
+    background-color: #333;
+    border-color: #222;
+    border-style: solid;
+    border-width: 2px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.episode_container {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.videos_top {
+    background-color: #222;
+    height: 3rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.type {
+    display: grid;
+    position: relative;
+    background-color: #222;
+    width: 75px;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    left: calc(50% - 37.5px);
+    top: -2.25rem;
+    margin-bottom: -2.25rem;
+}
+
+.episode {
+    width: 23%;
+    margin: 1%;
+}
+
+img {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.series_title {
+    text-align: center;
+    position: relative;
+    max-height: 2.2rem;
+    height: 2.2rem;
+    overflow-y: hidden;
+    margin: 5px;
+}
+
+.episode_number {
+    text-align: center;
+    position: relative;
+    font-size: .9rem;
+    margin: 8px;
+}
+
+.content {
+    display: flex;
+    flex-flow: row;
+}
+
+.info {
+    position: relative;
+    margin: 1%;
+    margin-left: 0%;
+    width: 32%;
+    height: 100%;
+    background-color: #333;
+    border-color: #222;
+    border-style: solid;
+    border-width: 2px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.info_top {
+    background-color: #222;
+    height: 3rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.info_container {
+    margin: 3%;
+    border-color: #222;
+    border-style: solid;
+}
+
+.info_title {
+    text-align: center;
+    background-color: #222;
+    padding: .25rem;
+}
+
+.info_content {
+    margin: 2%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1112px) {
+    .videos {
+        width: 98%;
+    }
+    .info {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1112px) and (min-width: 931px) {
+    .episode {
+        width: 18%
+    }
+}
+
+@media only screen and (max-width: 930px) and (min-width: 745px) {
+    .episode {
+        width: 23%
+    }
+}
+
+@media only screen and (max-width: 744px) and (min-width: 559px) {
+    .episode {
+        width: 31%
+    }
+}
+
+@media only screen and (max-width: 558px) {
+    .episode {
+        width: 48%
+    }
+}

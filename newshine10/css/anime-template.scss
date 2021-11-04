@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$red: #c92f32;
+$red1:rgb(201, 47, 50);
+$pink: #9D3361;
+$violet: #7B4075;
+$purple: #544878;
+$blue: #374B6C;
+$green: #2F4858;
+$grey: #333;
+$black: #111;
+$black1:rgb(27, 27, 27);
+$darkgrey: #222;
+$creme: #F9E3E5;
+$cremered: #AB6A72;
+$brown: #57423F;
+$greyborder: rgb(129, 129, 129);
+$realgreen: #007517;
+$realblue: #0059b8;
+$navli1: #5ad364;
+$navli2: #d3cb5a;
+$navli3: #5aa7d3;
+$navli4: #e568e9;
+.up-btn {
+    border: 1px solid rgb(98, 48, 1);
+}
+.container {
+    border-radius: 3px;
+    max-width: 1000px;
+    width: 100%;
+    height: auto!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+ 
+    .imgwrap {
+        margin-top: 40px;
+        img {
+            transform: translateX(15px);
+            border-radius: 3px;
+            height: 400px;
+            width: 250px;
+            object-fit: cover;
+        }
+        .stats {
+            padding: 5px;
+            display: none;
+            margin-top: 20px;
+            width: 280px;
+            height: 300px;
+            border-radius: 3px;
+            color: white;
+            background-color: rgb(37, 37, 37);
+            .gatwrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+            .gatunek {
+                padding: 2px 5px;
+                display: inline-block;
+                width: 33%;
+                height: 30px;
+                margin: 3px;
+                border: 1px solid rgb(0, 0, 0);
+                text-align: center;
+                line-height: 25px;
+                border-radius: 3px;
+                // font-size: 0.9rem;
+                margin-top: 5px;
+                text-transform: uppercase;
+                font-weight: 700;
+                background-color: rgb(122, 122, 122);
+                text-shadow: 2px 2px 5px #000;
+            }
+            p {
+                text-align: center;
+                margin-top: 5px;
+                padding: 5px;
+            }
+        }
+    }
+    .wrap {
+        max-width: 600px;
+        .epwrap {
+            border-radius: 3px;
+            h2 {
+                text-align: center;
+                margin: 15px 0;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
+                text-shadow: 2px 2px 5px #000;
+            }
+            margin-top: 40px;
+            height: auto;
+            width: 100%;
+            color: white;
+            background-color: rgb(37, 37, 37);
+            overflow: hidden;
+            p {
+                padding: 0 20px 10px 20px;
+            }
+        }
+        .odcinki {
+            margin: 40px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            a {
+                color: white;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-shadow: 2px 2px 5px #000;
+                transition: background-color .3s;
+                .odcinek {
+                    width: 100%;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                }
+                
+            }
+            a:nth-of-type(odd){
+                background-color: #1a4c81;
+            }
+            a:nth-of-type(even){
+                background-color: #c2292c;
+            }
+            a:nth-of-type(odd):hover{
+                background-color: #448bd8df;
+            }
+            a:nth-of-type(even):hover{
+                background-color: rgb(235, 75, 77);
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        min-height: calc(100% - 190px)!important;
+        margin: 20 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        .imgwrap {
+            .stats {
+                display: block;
+            }
+        }
+        .wrap {
+            margin-left: 45px;
+        }
+    }
+}

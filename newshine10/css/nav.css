@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,200&display=swap");
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #111;
+  border-bottom: 3px solid #222;
+  z-index: 15;
+}
+
+nav .navul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+nav .navul .navli {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navul .navli:nth-of-type(1) form {
+  display: none;
+  margin-left: 24px;
+}
+
+nav .navul .navli:nth-of-type(1) form [type="text"] {
+  height: 23px;
+  width: 240px;
+  background-color: #c2c2c2;
+}
+
+nav .navul .navli:nth-of-type(1) form [type="text"]:hover {
+  background-color: #d8d8d8;
+}
+
+nav .navul .navli:nth-of-type(1) form [type="submit"] {
+  height: 23px;
+  width: 23px;
+  float: right;
+  background-color: #818181;
+  cursor: pointer;
+}
+
+nav .navul .navli:nth-of-type(2) {
+  display: none;
+}
+
+nav .navul .navli:nth-of-type(2) a {
+  width: 150px;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+nav .navul .navli:nth-of-type(2) .nava {
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: 1.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 100%;
+  border-bottom: 3px solid #333;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  -webkit-transition: background-color .3s, border-color .3s;
+  transition: background-color .3s, border-color .3s;
+}
+
+nav .navul .navli:nth-of-type(2) .a11 {
+  color: #5ad364;
+}
+
+nav .navul .navli:nth-of-type(2) .a11 .nava:nth-of-type(1):hover {
+  border-color: #5ad364;
+  background-color: #5ad36436;
+}
+
+nav .navul .navli:nth-of-type(2) .a22 {
+  color: #aad35a;
+}
+
+nav .navul .navli:nth-of-type(2) .a22 .nava:nth-of-type(1):hover {
+  border-color: #aad35a;
+  background-color: #aad35a36;
+}
+
+nav .navul .navli:nth-of-type(2) .a33 {
+  color: #5aa7d3;
+}
+
+nav .navul .navli:nth-of-type(2) .a33 .nava:nth-of-type(1):hover {
+  border-color: #5aa7d3;
+  background-color: #5aa7d336;
+}
+
+nav .navul .navli:nth-of-type(2) .a44 {
+  color: #e568e9;
+  margin-right: 3vw;
+}
+
+nav .navul .navli:nth-of-type(2) .a44 .nava:nth-of-type(1):hover {
+  border-color: #e568e9;
+  background-color: #e568e936;
+}
+
+nav .navul .navli:nth-of-type(2) button {
+  margin-right: 20px;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #4b6adb;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+nav .navul .navli:nth-of-type(2) button i {
+  font-size: 20px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+nav .navul .navli:nth-of-type(2) button:hover {
+  background-color: #7a91e6;
+}
+
+nav .navul .navli:nth-of-type(3) {
+  color: white;
+  font-size: 45px;
+  margin-right: 15px;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav .navul .navli:nth-of-type(3):hover {
+  color: #b41a1d;
+}
+
+@media (min-width: 968px) {
+  nav .navul .navli:first-of-type form {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1628px) {
+  nav .navul .navli:nth-of-type(2) .a44 {
+    margin-right: 10vw;
+  }
+}
+
+@media (min-width: 1515px) {
+  nav .navul .navli:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .navul .navli:nth-of-type(3) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
